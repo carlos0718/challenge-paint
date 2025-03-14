@@ -112,7 +112,7 @@ export default function FullscreenCanvasGrid() {
 		if (index < 0) return;
 		setCells((prev) => {
 			const newCells = [...prev];
-			if (toggle) newCells[index] = newCells[index] === newColor ? "#fff" : newColor;
+			if (toggle) newCells[index] = newCells[index] === "#fff" ? newColor : "#fff";
 			else newCells[index] = newColor;
 			return newCells;
 		});
